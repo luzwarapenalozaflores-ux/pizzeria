@@ -1,0 +1,385 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Pizzería Rossella</title>
+    <meta charset="utf-8" />
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+        rel="stylesheet" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <style>
+/* NAVBAR */
+.navbar{
+    background-color: #B71C1C !important; /* rojo fuerte */
+}
+
+/* BOTONES */
+.btn-warning{
+    background-color: #FFC107;
+    color: black;
+    border: none;
+}
+
+.btn-warning:hover{
+    background-color: #FF5722;
+    color: white;
+}
+
+/* SECCIÓN BIENVENIDA */
+.jumbotron{
+    background-color: #C62828 !important;
+}
+
+/* TÍTULOS */
+h2, h3{
+    color: #B71C1C;
+}
+
+/* CARDS */
+.card{
+    border-radius: 10px;
+}
+
+.card:hover{
+    transform: scale(1.03);
+    transition: 0.3s;
+}
+
+/* TESTIMONIOS */
+#testimonios{
+    background-color: #FFF3E0; /* crema suave */
+}
+
+/* SUCURSALES */
+.list-group-item{
+    background-color: #FFE082;
+    border: none;
+    margin-bottom: 5px;
+}
+
+/* FORMULARIO */
+#contactos{
+    background-color: #e21f1f !important;
+}
+
+/* HORARIOS */
+#horarios{
+    background-color: #FFF3E0;
+}
+
+/* FOOTER */
+.footer-rossel{
+    background-color: #B71C1C; /* rojo de tu marca */
+}
+
+/* TEXTO DESTACADO */
+strong{
+    color: #FF5722;
+}
+</style>    
+
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow">
+        <div class="container">
+
+            <a class="navbar-brand fw-bold">🍕 Pizzería Salteñería Rossella</a>
+
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto text-center">
+
+                    <li class="nav-item"><a class="nav-link active" href="#inicio">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#menu">Menú</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#chefs">Chefs</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#testimonios">Testimonios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#sucursales">Nuestras Sucursales</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contactos">Contactos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#horarios">Horarios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="admin/login.php">Login</a></li>
+
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+  <!-- BANNER -->
+    <section id="banner" class="container-fluid p-0 ">
+        <div style="position:relative; 
+            background: url('images/rossella.png')
+            center/cover no-repeat; height: 400px;">
+            <div style="position: absolute; top:50%; left: 50%; transform:translate(-50%, -50%); text-align:center; color: #fff;">
+                <h1 class="display-4 fw-bold">🍕 Rossella</h1>
+                <p class="lead">Las mejores pizzas y salteñas de Oruro 😋</p>
+                <a href="#menu" class="btn btn-warning btn-lg">Ver Menú</a>
+            </div>
+        </div>
+    </section>
+    <!-- BIENVENIDA -->
+    <section class="container mt-4 text-center">
+        <div class="jumbotron bg-dark text-white">
+            <br />
+            <h2>Bienvenidos a la Pizzería Salteñería Rossella</h2>
+            <p>Variedad de pizzas y salteñas para el paladar a gusto de nuestra clientela Orureña </p>
+        </div>
+    </section>
+
+    <!-- CHEFS -->
+    <section id="chefs" class="container py-5 text-center">
+        <h2 class="mb-4 fw-bold">Nuestros Chefs</h2>
+
+        <div class="row g-4">
+
+            <div class="col-md-4">
+                <div class="card border-0 shadow h-100">
+                    <img src="images/colaboradores/chef0.jpg" class="card-img-top">
+
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Mario Rossi</h5>
+                        <p class="text-muted">Especialista en pizzas artesanales italianas, con ampli experiencia en masas tradicionales y coccion al horno.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card border-0 shadow h-100">
+                    <img src="images/colaboradores/chef4.jpeg" class="card-img-top">
+
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Luis Quispe</h5>
+                        <p class="text-muted">Experto en sabores bolivianos, creador de nuestra pizza de charque y especialidades regionales.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card border-0 shadow h-100">
+                    <img src="images/colaboradores/chef2.jpeg" class="card-img-top">
+
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Ana Fernández</h5>
+                        <p class="text-muted">Creativa en combinaciones gourmet, encargada de innovar con nuevos sabores en pizzas y salteñas especiales.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- TESTIMONIOS -->
+     <section id="testimonios" class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center mb-5 fw-bold">Testimonios</h2>
+
+            <div class="row g-4">
+
+                <div class="col-md-6">
+                    <div class="card border-0 shadow h-100">
+                        <div class="card-body text-center">
+                            <img src="images/ci1.jpeg" class="cliente-img" alt="Cliente" height="200 px">
+
+                            <p class="card-text fst-italic">
+                                "Las mejores pizzas que he probado en Oruro 😍"
+                            </p>
+
+                            <div class="text-warning mb-2">
+                                ★★★★★
+                            </div>
+
+                            <h6 class="fw-bold mb-0">Lucero Martinez</h6>
+                            <small class="text-muted">Cliente frecuente</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="card border-0 shadow h-100">
+                        <div class="card-body text-center">
+                            <img src="images/ci3.jpg" class= cliente-img alt="Cliente" height="200 px">
+
+                            <p class="card-text fst-italic">
+                                "Excelente servicio 😋"
+                            </p>
+
+                            <div class="text-warning mb-2">
+                                ★★★★★
+                            </div>
+
+                            <h6 class="fw-bold mb-0">Andrea López</h6>
+                            <small class="text-muted">Cliente</small>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    
+    <!-- MENÚ -->
+    <section class="container mt-4" id="menu">
+        <h2 class="text-center">Menú</h2>
+        <br>
+
+        <div class="row row-cols-1 row-cols-md-4 g-4">
+
+            <div class="col d-flex">
+                <div class="card">
+                    <img src="images/menu/pizza1.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <h5>Pizza Hawaiana</h5>
+                        <p class="small">Descripción:
+Deliciosa combinación de jamón jugoso, piña dulce y queso mozzarella fundido sobre una base crujiente. Un equilibrio perfecto entre lo dulce y lo salado que encanta a todos</p>
+                        <p><strong>Bs. 85</strong></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col d-flex">
+                <div class="card">
+                    <img src="images/menu/pizza2.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <h5>Pizza de Charque</h5>
+                        <p class="small">Descripción:
+Tradicional pizza boliviana preparada con charque desmenuzado, queso mozzarella, tomate y especias especiales que resaltan el auténtico sabor orureño</p>
+                        <p><strong>Bs. 90</strong></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col d-flex">
+                <div class="card">
+                    <img src="images/menu/carne.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <h5>Pizza de Carne</h5>
+                        <p class="small">
+Descripción:
+Exquisita pizza con carne sazonada, queso fundido y salsa de tomate natural, perfecta para los amantes de sabores intensos y caseros.</p>
+                        <p><strong>Bs. 80</strong></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col d-flex">
+                <div class="card">
+                    <img src="images/menu/bas1.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <h5>Pizza Básica</h5>
+                        <p class="small">Descripción:
+Clásica pizza con salsa de tomate y abundante queso mozzarella, ideal para quienes disfrutan lo simple pero delicioso.</p>
+                        <p><strong>Bs. 50</strong></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col d-flex">
+                <div class="card">
+                    <img src="images/menu/saltaña1.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <h5>Salteña de Carne</h5>
+                        <p class="small">Descripción:
+Deliciosa salteña rellena de carne jugosa, papa, huevo y especias tradicionales, con ese toque picante característico boliviano</p>
+                        <p><strong>Bs. 10</strong></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col d-flex">
+                <div class="card">
+                    <img src="images/menu/saltaña2.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <h5>Salteña de Pollo</h5>
+                        <p class="small">Descripción:
+Suave y sabrosa salteña con pollo desmenuzado, verduras frescas y un caldo ligeramente dulce que la hace irresistible</p>
+                        <p><strong>Bs. 10</strong></p>
+                    </div>
+                </div>
+            </div>
+
+        
+
+         <div class="col d-flex">
+                <div class="card">
+                    <img src="images/menu/saltaña4.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <h5>Salteña de Fricase</h5>
+                        <p class="small">Descripción:
+Especialidad única con sabor intenso a fricasé, combinando carne, especias y el toque tradicional que encanta al paladar</p>
+                        <p><strong>Bs. 10</strong></p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <!-- SUCURSALES -->
+     <section class="container mt-4" id="sucursales">
+  <h2 class="text-center">Nuestras Sucursales</h2>
+
+  <ul class="list-group mt-3">
+    <li class="list-group-item">📍 CENTRAL: Av. 6 de Agosto, Aroma</li>
+    <li class="list-group-item">📍 Calle La Paz entre Sargento Flores y Soto Mayor</li>
+    <li class="list-group-item">📍 Av. España entre Madrid y Toledo</li>
+    <li class="list-group-item">📍 Calle Beni, Plaza Sebastián Pagador</li>
+  </ul>
+</section>
+
+    <!-- CONTACTO -->
+    <section class="container mt-4" id="contacto">
+        <h2>Contacto</h2>
+        <p>Estamos aqui para servirle</p>
+
+        <form action="?" method="post" id="contactos" class="bg-secondary text-white p-3">
+
+            <div class="mt-3">
+                <label for="nombre" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="nombre" placeholder="Escribe tu nombre..." required>
+            </div>
+
+            <div class="mt-3">
+                <label for="email" class="form-label">Correo</label>
+                <input type="email" class="form-control" id="email" placeholder="Escribe tu correo electrónico..." required>
+            </div>
+
+            <div class="mt-3">
+                <label for="message" class="form-label">Mensaje</label>
+                <textarea class="form-control" id="message" rows="5"></textarea>
+            </div>
+
+            <div class="mt-3">
+                <input type="submit" class="btn btn-light" value="Enviar mensaje">
+            </div>
+
+        </form>
+    </section>
+
+    <!-- HORARIOS -->
+    <section id="horarios" class="py-5">
+        <div class="container text-center bg-light p-4">
+            <h3>⏰ Horarios</h3>
+            <p>Lunes: 8:00 - 17:00</p>
+            <p>Martes a Sábado: 8:00 - 22:00</p>
+            <p class="text-danger">Domingo: Cerrado</p>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer-rossel text-light text-center py-3">
+    <p>&copy;2027 Pizzería Rossella</p>
+</footer>
+
+</body>
+</html>
